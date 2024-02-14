@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>The Book Store</h1>
+        <div id="bookList"></div>
+      
+        <button id="newbook" onclick="openForm()">NEW BOOK</button>
+      
+        <div id="newBookModal" class="modal">
+          <div class="modal-content">
+            <span onclick="closeForm()" style="float:right;cursor:pointer;">&times;</span>
+            <h2>Add New Book</h2>
+            <form id="bookForm">
+              <label for="title">Title:</label><br>
+              <input type="text" id="title" name="title" required><br>
+              <label for="author">Author:</label><br>
+              <input type="text" id="author" name="author" required><br>
+              <label for="pages">Number of Pages:</label><br>
+              <input type="number" id="pages" name="pages" required><br>
+              <label for="read">Have you read it?</label>
+              <input type="checkbox" id="read" name="read"><br>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
