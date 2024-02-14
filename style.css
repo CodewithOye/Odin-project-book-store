@@ -71,3 +71,9 @@ body {
     border: 1px solid #888;
     width: 80%;
   }
+  footer p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
